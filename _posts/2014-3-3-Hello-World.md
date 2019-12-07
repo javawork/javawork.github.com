@@ -14,12 +14,12 @@ The easiest way to make your first post is to edit this one. Go into /_posts/ an
 ## Build
 
 ### Install OpenSSL
-* https://slproweb.com/products/Win32OpenSSL.html
+* [https://slproweb.com/products/Win32OpenSSL.html](https://slproweb.com/products/Win32OpenSSL.html)
 * OpenSSL 1.1.1 or later
 * Except "Light" suffix
 
 ### Build protobuf
-* https://github.com/protocolbuffers/protobuf/releases
+* [https://github.com/protocolbuffers/protobuf/releases](https://github.com/protocolbuffers/protobuf/releases)
 * Download protobuf cpp 3.11
 * Run VS2019 with Administrator
 * Open command line and goto the folder
