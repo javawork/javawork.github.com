@@ -23,7 +23,7 @@ The easiest way to make your first post is to edit this one. Go into /_posts/ an
 * Download protobuf cpp 3.11
 * Run VS2019 with Administrator
 * Open command line and goto the folder
-```
+```console
 mkdir cmake_build
 cd cmake_build
 vcvarsall amd64
