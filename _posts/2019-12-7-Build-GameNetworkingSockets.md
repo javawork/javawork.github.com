@@ -3,8 +3,6 @@ layout: post
 title: Build GameNetworkingSockets on Windows
 ---
 
-# Build GameNetworkingSockets on Windows
-
 ## Build
 
 ### Install OpenSSL
@@ -13,10 +11,10 @@ title: Build GameNetworkingSockets on Windows
 * Except "Light" suffix
 
 ### Install cmake
-* https://cmake.org/download/
+* [https://cmake.org/download/](https://cmake.org/download/)
 
 ### Install ninja
-* https://github.com/ninja-build/ninja/releases
+* [https://github.com/ninja-build/ninja/releases](https://github.com/ninja-build/ninja/releases)
 * Copy ninja.exe to `C:\Ninja`
 * Add `C:\Ninja` to Path 
 
@@ -27,7 +25,7 @@ title: Build GameNetworkingSockets on Windows
 * [https://github.com/protocolbuffers/protobuf/releases](https://github.com/protocolbuffers/protobuf/releases)
 * Download protobuf cpp 3.11
 * Run VS2019 with Administrator
-* Open command line and goto the folder
+* Open command line and goto the folder 
 ```cmd
 mkdir cmake_build
 cd cmake_build
