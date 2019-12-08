@@ -40,7 +40,7 @@ ninja install
 * Download GameNetworkingSockets 1.0
 * Run VS2019 with Administrator
 * Open command line and goto the folder
-```shell
+```cmd
 mkdir build
 cd build
 set PATH=%PATH%;C:\sdk\protobuf-amd64\bin
@@ -57,12 +57,12 @@ ninja
 * protobuf dll files
 
 ### Run Server
-```shell
+```cmd
 example_chat server
 ```
 
 ### Run Clients
-```shell
+```cmd
 example_chat client 127.0.0.1
 /nick PlayerAAA
 hi
@@ -70,7 +70,7 @@ How are you?
 /quit
 ```
 
-```shell
+```cmd
 example_chat client 127.0.0.1
 /nick PlayerBBB
 hello
@@ -79,7 +79,7 @@ Fine
 ```
 
 Output would be following
-```shell
+```cmd
 example_chat client 127.0.0.1
 /nick PlayerAAA
 Ye shall henceforth be known as PlayerAAA
