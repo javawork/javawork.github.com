@@ -51,7 +51,7 @@ ninja
 
 ## Test example_chat
 
-### Copy files
+### Collect these files in a folder
 * GameNetworkingSocks dll files
 * example_chat.exe
 * protobuf dll files
