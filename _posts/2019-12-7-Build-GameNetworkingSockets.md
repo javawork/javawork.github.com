@@ -61,7 +61,7 @@ ninja
 example_chat server
 ```
 
-### Run Clients
+### Run Client #1
 ```cmd
 example_chat client 127.0.0.1
 /nick PlayerAAA
@@ -70,6 +70,7 @@ How are you?
 /quit
 ```
 
+### Run Client #2
 ```cmd
 example_chat client 127.0.0.1
 /nick PlayerBBB
