@@ -1,6 +1,6 @@
 GameNetworkingSockets의 주요 기능에 보면 TCP의 슬라이딩 윈도우보다 개선된 신뢰 전송 기능 이라는 게 있습니다. Datagram Congestion Control Protocol(RFC 4340, section 11.4)에 기반한 ack vector라는 방식이고, Google QUIC에도 적용되어 있다고 합니다. 이 ack vector라는 방식을 잘 설명한 글이 있어서 번역 해 봤습니다.
 
-https://gafferongames.com/post/reliable_ordered_messages/ 
+[https://gafferongames.com/post/reliable_ordered_messages/](https://gafferongames.com/post/reliable_ordered_messages/)
 
 많은 사람들이 UDP로 reliable message 시스템을 구현하는 것은 바보 같은 짓이라고 합니다. 왜 TCP를 또 구현합니까? 하지만 모두가 TCP가 동작하는 방식에만 만족할 수는 없습니다. reliable message 구현하는 데는 많은 방법이 있고, 대부분은 TCP와는 다릅니다. 창의적인 방식으로 TCP보다 더 나은, 실시간 게임을 위한 reliable message 시스템을 구현해 봅시다.
 
