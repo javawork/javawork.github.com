@@ -1,4 +1,4 @@
-Datagram Congestion Control Protocol(RFC 4340, section 11.4)에 기반한 UDP 신뢰전송 구현방식 중 하나인 ack vector에 대한 글을 번역해 봤습니다. Google QUIC과 [Valve의 GameNetworkingSockets](https://github.com/ValveSoftware/GameNetworkingSockets), [Blizzard의 Overwatch](https://www.youtube.com/watch?v=W3aieHjyNvw)에도 이 방식이 적용되어 있습니다.
+Datagram Congestion Control Protocol(RFC 4340, section 11.4)에 기반한 UDP 신뢰전송 구현방식 중 하나인 ack vector에 대한 글을 번역해 봤습니다. Google QUIC과 Valve의 [GameNetworkingSockets](https://github.com/ValveSoftware/GameNetworkingSockets), Blizzard의 [Overwatch](https://www.youtube.com/watch?v=W3aieHjyNvw)에도 이 방식이 적용되어 있습니다.
 
 [https://gafferongames.com/post/reliable_ordered_messages/](https://gafferongames.com/post/reliable_ordered_messages/)
 
