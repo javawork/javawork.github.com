@@ -1,4 +1,4 @@
-GameNetworkingSockets의 주요 기능에 보면 TCP의 슬라이딩 윈도우보다 개선된 신뢰 전송 기능 이라는 게 있습니다. Datagram Congestion Control Protocol(RFC 4340, section 11.4)에 기반한 ack vector라는 방식이고, Google QUIC에도 적용되어 있다고 합니다. 이 ack vector라는 방식을 잘 설명한 글이 있어서 번역 해 봤습니다.
+Datagram Congestion Control Protocol(RFC 4340, section 11.4)에 기반한 UDP 신뢰전송 구현방식 중 하나인 ack vector에 대한 글을 번역해 봤습니다. Google QUIC과 [Valve의 GameNetworkingSockets](https://github.com/ValveSoftware/GameNetworkingSockets), [Blizzard의 Overwatch](https://www.youtube.com/watch?v=W3aieHjyNvw)에도 이 방식이 적용되어 있습니다.
 
 [https://gafferongames.com/post/reliable_ordered_messages/](https://gafferongames.com/post/reliable_ordered_messages/)
 
@@ -11,7 +11,6 @@ GameNetworkingSockets의 주요 기능에 보면 TCP의 슬라이딩 윈도우�
 가장 쉬운 방법은 모든 unacked 메세지를 전송되는 매 패킷에 포함하는 것 입니다. 예를 들면, 모든 전송 메세지는 id가 있고, 전송될 때 마다 증가합니다. 모든 전송 메세지에는 시작 id와 포함된 모든 메세지의 id가 있습니다. 수신측은 지속적으로 최근 받은 id를 송신측에 보내주고(ack), 송신측은 ack된 메세지보다 새로운 메세지를 매 패킷에 포함합니다. 
 
 이 방식은 간단하고 구현하기 쉽지만, 대량의 메세지가 소실되면 패킷의 사이즈가 크게 증가할 수 있습니다. 전송되는 메세지에 포함되는 메세지의 개수를 제한하면 방지할 수 있습니다. 하지만 1초에 60개의 패킷 전송처럼 자주 보내는 상황이라면 같은 메세지를 자주 전송할 수 있습니다. 
-
 
 Round trip 타임이 100ms라면 ack를 받기 전에 불필요하게 6번이나 메세지를 전송할 수 있습니다.  만일 정말 실시간성이 중요한 경우라면 감수할 수도 있겠지만, 대부분의 경우는 그런 bandwidth는 다른 곳에 사용되는 것이 좋습니다.
 
