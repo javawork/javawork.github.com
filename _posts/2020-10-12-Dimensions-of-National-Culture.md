@@ -38,4 +38,4 @@
 - 숫자가 크면 충동과 욕구를 실현하고 인생을 즐기는 사회
 - 한국 29, 독일 40, 영국 69
 
-![Finland/Japan/Korea/UK](image/CultureComparison.png)
+![Finland/Japan/Korea/UK](/images/CultureComparison.png)
