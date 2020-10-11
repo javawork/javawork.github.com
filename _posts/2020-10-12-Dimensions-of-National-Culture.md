@@ -1,5 +1,6 @@
 다른 문화를 이해하는 6가지의 지표
-https://www.hofstede-insights.com/country-comparison/
+
+[https://www.hofstede-insights.com/country-comparison/](https://www.hofstede-insights.com/country-comparison/)
 
 ## Power Distance
 
