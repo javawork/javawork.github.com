@@ -37,3 +37,5 @@
 - 숫자가 작으면 충동과 욕구를 억제하고, 인생을 즐기지 못하는 경향의 사회
 - 숫자가 크면 충동과 욕구를 실현하고 인생을 즐기는 사회
 - 한국 29, 독일 40, 영국 69
+
+![Finland/Japan/Korea/UK](image/CultureComparison.png)
